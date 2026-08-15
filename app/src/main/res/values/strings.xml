@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ExoBoost</string>
+    <string name="app_description">Universal MIUI-style Edge Toolbox for Android</string>
+    
+    <!-- Service & Notifications -->
+    <string name="overlay_service_channel_name">ExoBoost Edge Service</string>
+    <string name="overlay_service_channel_desc">Keeps the edge handle active over other applications</string>
+    <string name="overlay_service_running">Edge Handle Active</string>
+    <string name="overlay_service_running_desc">Swipe the edge pill inwards to open toolbox</string>
+
+    <!-- Permissions Explanations -->
+    <string name="perm_overlay_title">Display Over Other Apps</string>
+    <string name="perm_overlay_desc">ExoBoost needs this permission to show the subtle edge handle and floating toolbox on top of games, browsers, and video apps. No screen contents are ever monitored or captured without your explicit trigger.</string>
+    <string name="perm_notifications_title">Notification Permission</string>
+    <string name="perm_notifications_desc">Required on Android 13+ to maintain the foreground service so the edge handle is not killed by battery optimization.</string>
+
+    <!-- Phase 1 UI -->
+    <string name="btn_enable_service">Enable ExoBoost</string>
+    <string name="btn_disable_service">Disable ExoBoost</string>
+    <string name="status_permission_granted">Granted</string>
+    <string name="status_permission_not_granted">Not Granted</string>
+    <string name="status_service_running">Running</string>
+    <string name="status_service_stopped">Stopped</string>
+</resources>
