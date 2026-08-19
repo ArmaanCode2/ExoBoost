@@ -20,5 +20,7 @@
     <string name="status_permission_granted">Granted</string>
     <string name="status_permission_not_granted">Not Granted</string>
     <string name="status_service_running">Running</string>
-    <string name="status_service_stopped">Stopped</string>
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">ExoBoost Sidebar Service</string>
+    <string name="accessibility_service_description">Detects active application changes and displays the ExoBoost floating toolbox over enabled apps without requiring an ongoing notification.</string>
 </resources>
