@@ -74,6 +74,8 @@ class ScreenshotConfirmationOverlay(
     private val handler = Handler(Looper.getMainLooper())
     private val autoDismissRunnable = Runnable { dismiss() }
 
+    private val lifecycleOwner = com.exoboost.app.feature.overlay.OverlayLifecycleOwner()
+
     fun show() {
         val composeView = ComposeView(context).apply {
             setViewCompositionStrategy(
@@ -101,6 +103,8 @@ class ScreenshotConfirmationOverlay(
         }
 
         val frame = FrameLayout(context).apply {
+            lifecycleOwner.attachToView(this)
+            lifecycleOwner.attachToView(composeView)
             addView(
                 composeView,
                 FrameLayout.LayoutParams(
