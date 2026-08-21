@@ -127,6 +127,9 @@ class LiveStylePreviewOverlay(
         }
 
         val frame = FrameLayout(context).apply {
+            val lifecycleOwner = com.exoboost.app.feature.overlay.OverlayLifecycleOwner()
+            lifecycleOwner.attachToView(this)
+            lifecycleOwner.attachToView(composeView)
             addView(
                 composeView,
                 FrameLayout.LayoutParams(
